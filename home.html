@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamificação</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <!-- calendario     -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+
+
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
+
+    <script src="./assets/js/home.js" defer></script>
+</head>
+
+<body>
+    <div class="triangle-topleft"></div>
+    <div class="triangle-topright"></div>
+    <div class="container-main">
+        <nav class="menu">
+            <div class="top">
+                <img src="./assets/images/animo-logo.png" alt="Ânimo">
+                <ul>
+                    <li>
+                        <a><i class="fa-solid fa-house-chimney home-icon"></i> Menu Principal</a>
+                        <span class="blueMark"></span>
+                    </li>
+                    <li>
+                        <a><i class="fa-solid fa-user home-icon"></i> Perfil</a>
+                        <span class="blueMark hide"></span>
+                    </li>
+                    <li>
+                        <a><i class="fa-solid fa-trophy home-icon"></i> Classificação</a>
+                        <span class="blueMark hide"></span>
+                    </li>
+                    <li>
+                        <a><i class="fa-solid fa-calendar home-icon"></i> Calendário</a>
+                        <span class="blueMark hide"></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <div class="theme">
+                    Tema
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <p class="logout">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    Desconectar
+                </p>
+            </div>
+
+        </nav>
+        <main class="main-container">
+            <div class="profile">
+                <div class="profile-desc">
+                    <p class="name">Lucas Noites</p>
+                    <p class="role">Assessor da Presidência</p>
+                </div>
+                <img src="https://cdn.discordapp.com/attachments/768517291783487488/1121573607408152586/FzPNo8-WIAEiuwV.jpg" alt="Foto de Perfil">
+            </div>
+            <div class="principal-container ">
+                <div class="daily-task content">
+                    <h2>Tarefas do Dia</h2>
+                    <div class="completed-toFinish">
+                        <div class="completed">
+                            <p>
+                                <i class="fa-solid fa-check"></i>
+                                Completadas
+                            </p>
+                            <ul class="tasksCompleted">
+                            </ul>
+                        </div>
+                        <div class="toFinish">
+                            <p>
+                                <i class="fa-solid fa-hourglass-half"></i>
+                                A terminar
+                            </p>
+                            <ul class="tasksToFinish">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-calendar content">
+                    <h2>Calendário Semanal</h2>
+                    <div class="calendar"></div>
+                </div>
+                    
+                <div class="activities content">
+                    <h2>Atividades</h2>
+                    <ul>
+                        
+                    </ul>
+                </div>
+                <div class="efficiency content">
+                    <h2>Eficiência</h2>
+                    <div class="eff-desc-graph">
+                        <div class="efficiency-desc">
+                            <p>Tarefas completadas dentro do prazo <span>10/10</span></p>
+                            <p>Tarefas completadas fora do prazo <span>0/10</span></p>
+                        </div>
+                        <div class="graphic-img">
+                            <div class="graphic">
+                                gráfico
+                            </div>
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="classification content">
+                    <h2>Classificação</h2>
+                    <ul>
+                        <li id="second-place">
+                            <div class="position">
+                                <img src="https://cdn.discordapp.com/attachments/709749665561837568/1125539614548041860/IMG_20230611_133524.jpg" alt="">
+                                <span class="position-num">2</span>
+                            </div>
+                            <p>Lucas Madruga</p>
+                            <span>6000 Pontos</span>
+                        </li>
+                        <li id="crown">
+                            <div class="position">
+                                <i class="fa-solid fa-crown"></i>
+                                <img src="https://cdn.discordapp.com/attachments/709749665561837568/1095078888998195281/flamengo.png" alt="">
+                                <span class="position-num">1</span>
+                            </div>
+                            <p>Fábio Júlio</p>
+                            <span>8000 pts</span>
+                        </li>
+                        <li id="third-place">
+                            <div class="position">
+                                <img src="https://cdn.discordapp.com/attachments/709749665561837568/1125539940881674320/20220724_1852532.png" alt="">
+                                <span class="position-num">3</span>
+                            </div>
+                            <p>Nycollau Copérnico</p>
+                            <span>-300 Pontos</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
