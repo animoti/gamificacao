@@ -1,0 +1,108 @@
+.menu ul li:nth-child(3) a i{
+    color: var(--azulAnimo);
+    transition: 1s;
+}
+.menu ul li:nth-child(3) a{
+    color: var(--preto);
+    transition: 5s;
+}
+
+.menu ul li:nth-child(3) .blueMark{
+    transition: 4s;
+    width: 0%;
+}
+
+.principal-container {
+    display:grid;
+    grid-template-columns:repeat(6, 1fr);
+    grid-template-rows:repeat(6, 1fr);
+    padding: 4rem;
+    gap: 2rem;
+    width: 100%;
+}
+
+.grafico-setor {
+    font-size: 1.6rem;
+    color: var(--preto);
+    font-weight: 500;
+    grid-column: 1/5;
+    grid-row: 1/5;
+}
+
+.pontuacao-setor {
+    grid-column: 5/7;
+    grid-row: 1/6;
+}
+
+.grafico {
+    background-color: rgb(38, 90, 231);
+    width: 25rem;
+    height: 25rem;
+}
+.principal-container ul {
+    list-style: none;
+}
+
+.pontuacao-setor img {
+    height: 10rem;
+    width: 10rem;
+    object-fit: cover;
+    border-radius: 50%;
+    border: black solid 2px;
+}
+
+.pontuacao-setor h3 {
+    font-size: 1.6rem;
+    color: var(--preto);
+    font-weight: 600;
+}
+
+.pontuacao-setor p {
+    font-size: 1.6rem;
+    color: var(--preto);
+    font-weight: 400;
+}
+
+.pontuacao-setor ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.legenda-setor {
+    font-size: 1.6rem;
+    color: var(--preto);
+    font-weight: 400;
+    grid-column: 1/5;
+    grid-row: 5/6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.legenda-setor ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.legenda-setor ul li{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.quadrado {
+    height: 2rem;
+    width: 2rem;
+    border-radius: .5rem;
+    background-color: var(--azulAnimo);
+}
+
+.linksClassificação a:nth-child(3) {
+    color: var(--preto);
+    font-weight: 700;
+}
