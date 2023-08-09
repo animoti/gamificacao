@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gamificação</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/home.css" />
+    <link rel="stylesheet" href="./assets/css/perfil.css" />
+
+    <script src="./assets/js/home.js" defer></script>
+  </head>
+
+  <body>
+    <div class="triangle-topleft"></div>
+    <div class="triangle-topright"></div>
+    <div class="container-main">
+      <nav class="menu">
+        <div class="top">
+          <img src="./assets/images/animo-logo.png" alt="Ânimo" />
+          <ul>
+            <li>
+              <a
+                ><i class="fa-solid fa-house-chimney home-icon"></i> Menu
+                Principal</a
+              >
+              <span class="blueMarkhide"></span>
+            </li>
+            <li>
+              <a><i class="fa-solid fa-user home-icon"></i> Perfil</a>
+              <span class="blueMark"></span>
+            </li>
+            <li>
+              <a><i class="fa-solid fa-trophy home-icon"></i> Classificação</a>
+              <span class="blueMark hide"></span>
+            </li>
+            <li>
+              <a><i class="fa-solid fa-calendar home-icon"></i> Calendário</a>
+              <span class="blueMark hide"></span>
+            </li>
+          </ul>
+        </div>
+        <div class="bottom">
+          <div class="theme">
+            Tema
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider"></span>
+            </label>
+          </div>
+          <p class="logout">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            Desconectar
+          </p>
+        </div>
+      </nav>
+
+      <main class="main-container profile-main-container">
+        <h1>Perfil</h1>
+        <div class="profile-container">
+          <section class="user-profile">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZPtUu7wpIZxNQesUO2k4HPzwC6jIebyoVsA&usqp=CAU"
+              alt=""
+              srcset=""
+            />
+            <div class="user-profile-container">
+              <p>Nome de alguém</p>
+              <p>Cargo</p>
+              <p>Curso</p>
+            </div>
+          </section>
+          <section class="user-data">
+            <div class="data data-p">
+                <p>Nome Completo: </p> 
+                <p>Email: </p>
+                <p>Senha: </p>
+                <p>Data de Nascimento: </p>
+                <p>Endereço: </p>
+                <p>Complemento: </p>
+                <p>Telefone:</p>
+            </div>
+            <div class="data data-span">
+                <span id="nome">Nome de alguém</span>
+                <span id="email">Email de alguém</span>
+                <span id="senha">Senha de alguém</span>
+                <span id="dataNasc">Data de nascimento de alguém</span>
+                <span id="endereco">Endereço de alguém</span>
+                <span id="complemento">Complemento de alguém</span>
+                <span id="telefone">Telefone de alguém</span>
+            </div>
+            <div class="data data-icon">
+                <i class="fa-solid fa-lock"></i>
+                <i class="fa-solid fa-lock"></i>
+                <i class="fa-solid fa-pen"></i>
+                <i class="fa-solid fa-lock"></i>
+                <i class="fa-solid fa-pen"></i>
+                <i class="fa-solid fa-pen"></i>
+                <i class="fa-solid fa-pen"></i>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
