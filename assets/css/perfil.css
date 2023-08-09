@@ -1,0 +1,89 @@
+.profile-main-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 5rem 15rem 5rem 15rem;
+    height: auto
+}
+
+.profile-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.user-profile {
+    height: 35vh;
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 2rem;
+}   
+
+.user-profile img {
+    height: 30vh;
+    border-radius: 50%;
+    border: .5rem solid #000;
+}
+
+.user-profile-container {
+    margin-left: 3rem;
+}
+
+.user-profile-container :nth-child(1) {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.user-profile-container :nth-child(2) {
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+.user-profile-container :nth-child(3) {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--azulEscuro);
+}
+
+.user-data {
+    height: 49vh;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 2fr 3fr 1fr;
+}
+
+.data-p, .data-span, .data-icon {
+    display: flex!important;
+    align-items: flex-start!important;
+    justify-content: space-between!important;
+}
+
+.data {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+}
+
+.data-p {
+    color: #000;
+    font-size: 1.7rem
+}
+
+.data-span{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cinzaEscuro);
+}
+
+.data-icon i{
+    font-size: 1.5rem;
+    color: var(--cinzaEscuro);
+}
+

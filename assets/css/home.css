@@ -34,6 +34,10 @@ h2{
     align-items: center;
 }
 
+.profile h2 {
+    margin-right: auto;
+}
+
 .profile-desc{
     text-align: right;
     font-size: 1.5rem;
@@ -63,8 +67,8 @@ h2{
 
 .daily-task{
     grid-area: 1/1/1/5;
-    
 }
+
 .content {
     border-radius: 1.5rem;
     
