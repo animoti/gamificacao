@@ -1,4 +1,4 @@
-const IP = 'http://localhost:3000';
+const IP = 'http://4.228.111.250:3000';
 const passwordEye = document.querySelector('.password-icon');
 
 passwordEye.addEventListener('click', function() {
