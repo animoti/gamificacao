@@ -15,7 +15,6 @@
 
 
 /* main */
-
 h2{
     font-size: 2rem
 }
@@ -55,6 +54,7 @@ h2{
     margin-left: 1.5rem;
 }
 
+
 .principal-container{
     height: 80rem;
 
@@ -69,6 +69,7 @@ h2{
     grid-area: 1/1/1/5;
 }
 
+
 .content {
     border-radius: 1.5rem;
     
@@ -79,6 +80,7 @@ h2{
     background-color: var(--branco);
     box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 20px 2px;
 }
+
 .completed-toFinish{
     border-top: 1px solid color-mix(in srgb, var(--cinzaEscuro) 40%, white);;
     width: 100%;    
