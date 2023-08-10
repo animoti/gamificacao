@@ -1,0 +1,94 @@
+#toggler {
+    font-size: 3rem;
+    display: none;
+}
+
+@media (max-width: 425px) {
+    .triangle-topright {
+        border-bottom: 20rem solid var(--azulAnimo);
+        border-left: 20rem solid transparent;
+    }
+
+    .triangle-topleft {
+        border-top: 20rem solid var(--azulAnimo);
+        border-right: 20rem solid transparent;
+    }
+
+    .titulo-responsivo img {
+        height: 4rem;
+    }
+
+    .titulo-responsivo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        width: 100%;
+    }
+    
+    .login-container {
+        height: 100%;
+        width: 100%;
+    }
+
+    :root {
+        font-size: 55% ;
+    }
+
+    .principal-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        height: auto !important;
+        width: 30rem !important;
+    }
+
+    .content {
+        width: 100% !important;
+    }
+
+    .classification ul li p, .classification ul li .pontuacao{
+        display: none;
+    }
+    .classification {       
+        gap: 4rem;
+    }
+    .daily-task p , .efficiency-desc p{
+        font-size: 1.3rem;
+    }
+    .profile-desc p {
+        display: none;
+    }
+    .profile img {
+        height: 4rem;
+        width: 4rem;
+    }
+    .profile {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    }
+    .main-container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    #toggler {
+        display: block;
+    }
+    /* .container-main {
+        position: relative;
+    }
+    .menu {
+        position: absolute;
+    } */
+        
+}

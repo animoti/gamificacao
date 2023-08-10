@@ -16,8 +16,6 @@
     height: 12rem;
 }
 
-
-
 .form-container {
     width: 100%;
     height: 100%;
@@ -101,4 +99,25 @@ p a:hover {
 .btnSubmitLogin:hover {
     background-color: var(--azulEsverdeado);
     color: var(--branco);
+}
+
+
+
+
+
+
+
+@media (max-width: 425px){
+    .container {
+        height: 90% !important;
+    }
+    
+    body {
+        display: flex ;
+        align-items: center ;
+        justify-content: center ;
+
+        height: 100vh !important;
+        width: 100vw !important;
+    }
 }

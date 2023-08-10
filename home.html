@@ -20,14 +20,22 @@
 
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./assets/css/home.css">
+    <link rel="stylesheet" href="./assets/css/responsivo.css">
 
     <script src="./assets/js/home.js" defer></script>
+    <script src="./assets/js/toggler.js" defer></script>
 </head>
 
 <body>
     <div class="triangle-topleft"></div>
     <div class="triangle-topright"></div>
+
+    <div class="titulo-responsivo">
+        <h1>Menu Principal</h1>
+    </div>
+
     <div class="container-main">
+        
         <nav class="menu">
             <div class="top">
                 <img src="./assets/images/animo-logo.png" alt="Ânimo">
@@ -66,7 +74,9 @@
 
         </nav>
         <main class="main-container">
+            
             <div class="profile">
+                <i class="fa-solid fa-bars" id="toggler"></i>
                 <div class="profile-desc">
                     <p class="name">Lucas Noites</p>
                     <p class="role">Assessor da Presidência</p>
@@ -131,7 +141,7 @@
                                 <span class="position-num">2</span>
                             </div>
                             <p>Lucas Madruga</p>
-                            <span>6000 Pontos</span>
+                            <span class="pontuacao">6000 Pontos</span>
                         </li>
                         <li id="crown">
                             <div class="position">
@@ -140,7 +150,7 @@
                                 <span class="position-num">1</span>
                             </div>
                             <p>Fábio Júlio</p>
-                            <span>8000 pts</span>
+                            <span class="pontuacao">8000 pts</span>
                         </li>
                         <li id="third-place">
                             <div class="position">
@@ -148,7 +158,7 @@
                                 <span class="position-num">3</span>
                             </div>
                             <p>Nycollau Copérnico</p>
-                            <span>-300 Pontos</span>
+                            <span class="pontuacao">-300 Pontos</span>
                         </li>
                     </ul>
                 </div>

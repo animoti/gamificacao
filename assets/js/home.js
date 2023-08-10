@@ -190,6 +190,9 @@ async function logout() {
 }
 $(".logout").on( "click", logout);
 
+
+
+
 loadUpcomingTasks()
 loadTaskstoFinish()
 loadTasksCompleted()

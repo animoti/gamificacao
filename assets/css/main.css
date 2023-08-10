@@ -47,6 +47,11 @@
     border-bottom: 60rem solid var(--azulAnimo);
     border-left: 60rem solid transparent;
 }
+.titulo-responsivo {
+    display: none;
+}
+
+
 
 body {
     display: grid;
