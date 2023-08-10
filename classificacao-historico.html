@@ -3,7 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gamificação</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+
+
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
+    <link rel="stylesheet" href="./assets/css/perfil.css">
+    <link rel="stylesheet" href="./assets/css/classificacao-placar.css">
+
+    <script src="./assets/js/home.js" defer></script>
 </head>
 <body>
     <div class="triangle-topleft"></div>
@@ -15,15 +32,15 @@
                 <ul>
                     <li>
                         <a><i class="fa-solid fa-house-chimney home-icon"></i> Menu Principal</a>
-                        <span class="blueMarkhide"></span>
+                        <span class="blueMark hide"></span>
                     </li>
                     <li>
                         <a><i class="fa-solid fa-user home-icon"></i> Perfil</a>
-                        <span class="blueMark"></span>
+                        <span class="blueMark hide"></span>
                     </li>
                     <li>
                         <a><i class="fa-solid fa-trophy home-icon"></i> Classificação</a>
-                        <span class="blueMark hide"></span>
+                        <span class="blueMark"></span>
                     </li>
                     <li>
                         <a><i class="fa-solid fa-calendar home-icon"></i> Calendário</a>
@@ -46,6 +63,121 @@
             </div>
 
         </nav>
+
+        <main class="main-container">
+            <div class="profile">
+                <h2>Classificação</h2>
+                <div class="profile-desc">
+                    <p class="name">Lucas Noites</p>
+                    <p class="role">Assessor da Presidência</p>
+                </div>
+                <img src="./assets/images/animo-logo.png" alt="Foto de Perfil">
+            </div>
+            <div class="linksClassificação">
+                <a href="#">Placar</a>
+                <a href="#">Histórico</a>    
+                <a href="#">Setor</a>
+            </div>
+            <div class="principal-container ">
+                
+                <div class="classification-score content">    
+                    <ul>
+                        <li id="second-place">
+                            <div class="position">
+                                <img src="./assets/images/animo-logo.png" alt="">
+                                <span class="position-num">2</span>
+                            </div>
+                            <p>Lucas Madruga</p>
+                            <span>6000 Pontos</span>
+                        </li>
+                        <li id="crown">
+                            <div class="position">
+                                <i class="fa-solid fa-crown"></i>
+                                <img src="./assets/images/animo-logo.png" alt="">
+                                <span class="position-num">1</span>
+                            </div>
+                            <p>Fábio Júlio</p>
+                            <span>8000 pts</span>
+                        </li>
+                        <li id="third-place">
+                            <div class="position">
+                                <img src="./assets/images/animo-logo.png" alt="">
+                                <span class="position-num">3</span>
+                            </div>
+                            <p>Nycollau Copérnico</p>
+                            <span>-300 Pontos</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="classification-allScores content">
+                    <ul>
+                        <li>
+                            <div class="position">1</div>
+                            <div class="info">
+                                <img src="./assets/images/animo-logo.png" alt="">
+                                <div class="name">Rafael</div>
+                            </div>
+                            
+                            <div class="setor">TI</div>
+                            <div class="points">8000 pts</div>
+                        </li>
+                        <hr>
+                        <li>
+                            <div class="position">1</div>
+                            <div class="info">
+                                <img src="./assets/images/animo-logo.png" alt="">
+                                <div class="name">Rafael</div>
+                            </div>
+                            <div class="setor">TI</div>
+                            <div class="points">8000 pts</div>
+                        </li>
+                        <hr>
+                        <li>
+                            <div class="position">1</div>
+                            <div class="info">
+                                <img src="./assets/images/animo-logo.png" alt="">
+                                <div class="name">Rafael</div>
+                            </div>
+                            <div class="setor">Marketing</div>
+                            <div class="points">8000 pts</div>
+                        </li>
+                        <hr>
+                        <li>
+                            <div class="position">1</div>
+                            <div class="info">
+                                <img src="./assets/images/animo-logo.png" alt="">
+                                <div class="name">Rafael</div>
+                            </div>
+                            <div class="setor">TI</div>
+                            <div class="points">8000 pts</div>
+                        </li>
+                        <hr>
+                        <li>
+                            <div class="position">1</div>
+                            <div class="info">
+                                <img src="./assets/images/animo-logo.png" alt="">
+                                <div class="name">Rafael</div>
+                            </div>
+                            <div class="setor">TI</div>
+                            <div class="points">8000 pts</div>
+                        </li>
+                        <hr>
+                        <li>    
+                            <div class="position">1</div>
+                            <div class="info">
+                                <img src="./assets/images/animo-logo.png" alt="">
+                                <div class="name">Rafael</div>
+                            </div>
+                            <div class="setor">TI</div>
+                            <div class="points">8000 pts</div>
+                        </li>
+                        <hr>
+                    </ul>
+                </div>
+
+            </div>
+        </main>
     </div>
 </body>
 </html>
